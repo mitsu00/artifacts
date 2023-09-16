@@ -19,10 +19,8 @@ jobs:
         allowUpdates: true
         artifactErrorsFailBuild: true
         makeLatest: false
-        omitName: true
-        omitBody: true
         commit: "main"
-        tag: "1"
+        tag: "v1.0"
         name: "hi"
         repo: "releases"
         token: ${{ secrets.API_TOKEN_GITHUB }}
