@@ -18,7 +18,9 @@ jobs:
       with:
         allowUpdates: true
         artifactErrorsFailBuild: true
-        makeLatest: true
+        makeLatest: false
+        omitName: true
+        omitBody: true
         commit: "hii"
         tag: 1
         name: "hi"
