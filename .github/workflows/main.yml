@@ -23,5 +23,5 @@ jobs:
         owner: "mitsu00"
         repo: "releases"
         token: ${{ secrets.API_TOKEN_GITHUB }}
-        artifacts: "*.txt"
+        artifacts: "a.txt"
         bodyFile: "README.md"
