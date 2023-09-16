@@ -1,0 +1,27 @@
+name: Releases
+
+on: 
+  workflow_dispatch:
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v3
+    - run: echo "hellow world" > a.txt
+    - run: ls
+    - uses: ncipollo/release-action@v1.13.0
+      with:
+        allowUpdates: true
+        artifactErrorsFailBuild: true
+        makeLatest: true
+        commit: "Release"
+        tag: "v1.0"
+        owner: "mitsu00"
+        repo: "build"
+        token: ""
+        artifacts: "*.txt"
+        bodyFile: "README.md"
