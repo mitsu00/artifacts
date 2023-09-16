@@ -14,7 +14,8 @@ jobs:
     - uses: actions/checkout@v3
     - run: echo "VERSI=v1.1" >> $GITHUB_ENV
     - run: echo "hellow world" > a.txt
-    - run: ls
+    - run: ls ${{ GITHUB_WORKSPACE }}
+    - run: echo "MITSU=${{ GITHUB_WORKSPACE }}" >> $GITHUB_ENV
     - uses: ncipollo/release-action@v1.13.0
       with:
         allowUpdates: true
@@ -25,5 +26,5 @@ jobs:
         name: "YOUU ${{ env.VERSI }}"
         repo: "releases"
         token: ${{ secrets.API_TOKEN_GITHUB }}
-        artifacts: "${GITHUB_WORKSPACE}/a.txt"
+        artifacts: "${{ env.MITSU }}/a.txt"
         bodyFile: "README.md"
