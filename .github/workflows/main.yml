@@ -26,5 +26,5 @@ jobs:
         name: "YOUU ${{ env.VERSI }}"
         repo: "releases"
         token: ${{ secrets.API_TOKEN_GITHUB }}
-        artifacts: "${{ env.MITSU }}/a.txt"
+        artifacts: "${{ env.MITSU }}/*.txt"
         bodyFile: "README.md"
