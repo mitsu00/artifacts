@@ -21,10 +21,9 @@ jobs:
         makeLatest: false
         omitName: true
         omitBody: true
-        commit: "hii"
-        tag: 1
+        commit: "main"
+        tag: "1"
         name: "hi"
-        owner: "mitsu00"
         repo: "releases"
         token: ${{ secrets.API_TOKEN_GITHUB }}
         artifacts: "a.txt"
