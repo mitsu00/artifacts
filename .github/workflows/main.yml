@@ -1,6 +1,7 @@
 name: Releases
 
-on: 
+on:
+  push:
   workflow_dispatch:
 
 jobs:
@@ -19,6 +20,8 @@ jobs:
         artifactErrorsFailBuild: true
         makeLatest: true
         commit: "v1"
+        tag: "v1"
+        name: "hi"
         owner: "mitsu00"
         repo: "releases"
         token: ${{ secrets.API_TOKEN_GITHUB }}
