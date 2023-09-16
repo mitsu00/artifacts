@@ -19,8 +19,8 @@ jobs:
         allowUpdates: true
         artifactErrorsFailBuild: true
         makeLatest: true
-        commit: "v1"
-        tag: "v1"
+        commit: "1"
+        tag: "1"
         name: "hi"
         owner: "mitsu00"
         repo: "releases"
