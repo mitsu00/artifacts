@@ -18,7 +18,7 @@ jobs:
         allowUpdates: true
         artifactErrorsFailBuild: true
         makeLatest: true
-        commit: "Release"
+        commit: "v1"
         owner: "mitsu00"
         repo: "releases"
         token: ${{ secrets.API_TOKEN_GITHUB }}
