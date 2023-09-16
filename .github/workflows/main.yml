@@ -21,7 +21,7 @@ jobs:
         commit: "Release"
         tag: "v1.0"
         owner: "mitsu00"
-        repo: "build"
+        repo: "releases"
         token: ${{ secrets.API_TOKEN_GITHUB }}
         artifacts: "*.txt"
         bodyFile: "README.md"
