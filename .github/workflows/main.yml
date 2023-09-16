@@ -21,7 +21,7 @@ jobs:
         makeLatest: false
         commit: "main"
         tag: "v1.0"
-        name: "hi"
+        name: "hii"
         repo: "releases"
         token: ${{ secrets.API_TOKEN_GITHUB }}
         artifacts: "a.txt"
