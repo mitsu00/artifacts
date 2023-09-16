@@ -22,6 +22,6 @@ jobs:
         tag: "v1.0"
         owner: "mitsu00"
         repo: "build"
-        token: ""
+        token: ${{ secrets.API_TOKEN_GITHUB }}
         artifacts: "*.txt"
         bodyFile: "README.md"
