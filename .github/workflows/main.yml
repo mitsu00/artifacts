@@ -22,7 +22,7 @@ jobs:
         makeLatest: false
         commit: "main"
         tag: ${{ env.VERSI }}
-        name: "YOUU"
+        name: "YOUU ${{ env.VERSI }}"
         repo: "releases"
         token: ${{ secrets.API_TOKEN_GITHUB }}
         artifacts: "a.txt"
